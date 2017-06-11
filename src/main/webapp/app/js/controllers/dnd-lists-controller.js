@@ -1,8 +1,8 @@
-angular
-		.module("hello")
-		.controller(
-				"DndListsController",
-				['$scope', function($scope) {
+angular.module("hello").controller(
+		"DndListsController",
+		[
+				'$scope',
+				function($scope) {
 
 					$scope.models = [ {
 						listName : "A",
@@ -37,9 +37,11 @@ angular
 					$scope.onDragstart = function(list, event) {
 						list.dragging = true;
 						if (event.dataTransfer.setDragImage) {
-							/*var img = new Image();
-							img.src = 'framework/vendor/ic_content_copy_black_24dp_2x.png';
-							event.dataTransfer.setDragImage(img, 0, 0);*/
+							/*
+							 * var img = new Image(); img.src =
+							 * 'framework/vendor/ic_content_copy_black_24dp_2x.png';
+							 * event.dataTransfer.setDragImage(img, 0, 0);
+							 */
 						}
 					};
 
@@ -81,4 +83,4 @@ angular
 					$scope.$watch('models', function(model) {
 						$scope.modelAsJson = angular.toJson(model, true);
 					}, true);
-				}]);
+				} ]);

@@ -1,0 +1,5 @@
+<uib-tabset active="active"> <uib-tab index="$index" ng-repeat="tab in tabs | orderBy : 'index'" ng-init="tab.index = $index" active="tab.active"
+  ng-drop="true" ng-drop-success="onDropComplete($index,$data)"> <uib-tab-heading ng-drag="true" draggable="false" ng-drag-data="{{tab.index}}">
+<i class="glyphicon glyphicon-bell"></i> {{tab.title}} </uib-tab-heading>
+<div ng-include="tab.templateUrl"></div>
+</uib-tab> </uib-tabset>

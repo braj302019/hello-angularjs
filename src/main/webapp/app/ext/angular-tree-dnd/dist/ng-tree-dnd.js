@@ -1145,7 +1145,7 @@
                                     $http.get(
                                         attrs.templateUrl || $TreeDnDTemplate.getPath(),
                                         {cache: $templateCache}
-                                    ).success(
+                                    ).then(
                                         function (data) {
                                             element.append($compile(data.trim())(scope));
                                         }

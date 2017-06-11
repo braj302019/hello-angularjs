@@ -1,0 +1,12 @@
+<form class="input-group col-md-4 form-inline">
+  <input type="text" class="form-control" placeholder="Search captures" ng-model="search[searchBy]">
+  <ul style="list-style: none">
+    <li><input type="radio" name="searchoption" ng-model="searchBy" value="$" id="All" checked><label for="all">Search through all</label></li>
+    <li><input type="radio" name="searchoption" ng-model="searchBy" value="birdName" id="Birdname"><label for="birdname">Search by birdname</label></li>
+    <li><input type="radio" name="searchoption" ng-model="searchBy" value="place" id="Place"><label for="place">Search by place</label></li>
+  </ul>
+
+  <ul>
+    <li ng-repeat="capture in captures|filter:search">{{capture.birdName}} - {{capture.place}}</li>
+  </ul>
+</form>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="hello">
+<head>
+<title>Hello AngularJS</title>
+
+<link rel="stylesheet" type="text/css" href="/app/ext/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/app/ext/angular-tree-dnd/dist/ng-tree-dnd.min.css">
+<link rel="stylesheet" type="text/css" href="/app/ext/angular-ui-grid/ui-grid.css">
+
+<link rel="stylesheet" type="text/css" href="/app/css/dnd-lists.css">
+<link rel="stylesheet" type="text/css" href="/app/css/grid.css">
+<link rel="stylesheet" type="text/css" href="/app/css/draggable.css">
+
+</head>
+<body class="row">
+
+  <div class="col-md-3">
+    <ul>
+      <li><a ng-href="#!/">Hello</a></li>
+      <li><a ng-href="#!/filter">Filter</a></li>
+      <li><a ng-href="#!/dnd-lists">Drag & Drop List</a></li>
+      <li><a ng-href="#!/dnd-tree">Drag & Drop Tree</a></li>
+      <li><a ng-href="#!/components">Custom Components</a></li>
+      <li><a ng-href="#!/ui-grid">Angular UI Grid</a></li>
+    </ul>
+  </div>
+
+  <div ng-view="true" class="col-md-8"></div>
+
+  <script src="/app/ext/jquery/dist/jquery.min.js"></script>
+  <script src="/app/ext/angular/angular.min.js"></script>
+  <script src="/app/ext/angular-route/angular-route.min.js"></script>
+  <script src="/app/ext/angular-drag-and-drop-lists/angular-drag-and-drop-lists.min.js"></script>
+  <script src="/app/ext/angular-tree-dnd/dist/ng-tree-dnd.min.js"></script>
+  <script src="/app/ext/angular-ui-grid/ui-grid.js"></script>
+  <script src="/app/ext/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/app/ext/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="/app/ext/ngDraggable/ngDraggable.js"></script>
+
+  <script src="/app/js/app.js"></script>
+
+  <script src="/app/js/directives/button-directive.js"></script>
+
+  <script src="/app/js/controllers/dnd-lists-controller.js"></script>
+  <script src="/app/js/controllers/dnd-tree-controller.js"></script>
+  <script src="/app/js/controllers/hello-controller.js"></script>
+  <script src="/app/js/controllers/grid-controller.js"></script>
+  <script src="/app/js/controllers/filter-controller.js"></script>
+  <script src="/app/js/controllers/components-controller.js"></script>
+
+</body>
+</html>
