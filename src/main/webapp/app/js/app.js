@@ -1,6 +1,6 @@
 angular.module(
 		'hello',
-		[ 'ui.bootstrap', 'ngRoute', 'ngDraggable', 'dndLists', 'ntt.TreeDnD',
+		[ 'ui.bootstrap', 'ngRoute', 'ngDraggable', 'dndLists',
 				'ui.grid', 'ui.grid.treeView', 'ui.grid.resizeColumns',
 				'ui.grid.moveColumns', 'ui.grid.selection',
 				'ui.grid.autoResize' ]).config(
@@ -14,9 +14,6 @@ angular.module(
 			}).when('/dnd-lists', {
 				templateUrl : '/app/dnd-lists.html',
 				controller : 'DndListsController'
-			}).when('/dnd-tree', {
-				templateUrl : '/app/dnd-tree.html',
-				controller : 'DndTreeController'
 			}).when('/ui-grid', {
 				templateUrl : '/app/tabs.html',
 				controller : 'TabsGridController'
