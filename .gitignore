@@ -4,5 +4,3 @@
 bower_components/
 node_modules/
 target/
-src/main/webapp/app/ext/
-src/main/webapp/app/dist/
